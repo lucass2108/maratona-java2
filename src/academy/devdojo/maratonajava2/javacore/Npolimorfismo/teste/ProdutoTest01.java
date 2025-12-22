@@ -1,9 +1,9 @@
-package academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.teste;
+package academy.devdojo.maratonajava2.javacore.Npolimorfismo.teste;
 
-import academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.dominio.Computador;
-import academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.dominio.Televisao;
-import academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.dominio.Tomate;
-import academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.servico.CalculadoraImposto;
+import academy.devdojo.maratonajava2.javacore.Npolimorfismo.dominio.Computador;
+import academy.devdojo.maratonajava2.javacore.Npolimorfismo.dominio.Televisao;
+import academy.devdojo.maratonajava2.javacore.Npolimorfismo.dominio.Tomate;
+import academy.devdojo.maratonajava2.javacore.Npolimorfismo.servico.CalculadoraImposto;
 
 public class ProdutoTest01 {
     static void main(String[] args) {

@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.dominio;
+package academy.devdojo.maratonajava2.javacore.Npolimorfismo.dominio;
 
 public class Computador extends Produto {
     public static final double IMPOSTO_POR_CENTO = 0.21;

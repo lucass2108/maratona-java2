@@ -1,7 +1,7 @@
-package academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.servico;
+package academy.devdojo.maratonajava2.javacore.Npolimorfismo.servico;
 
-import academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.dominio.Produto;
-import academy.devdojo.maratonajava2.javacore.Minterfaces.Npolimorfismo.dominio.Tomate;
+import academy.devdojo.maratonajava2.javacore.Npolimorfismo.dominio.Produto;
+import academy.devdojo.maratonajava2.javacore.Npolimorfismo.dominio.Tomate;
 
 public class CalculadoraImposto {
     public static void calcularImposto(Produto produto) {
