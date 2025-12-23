@@ -1,0 +1,23 @@
+package academy.devdojo.maratonajava2.introducao;
+
+public class Aula06EstruturaDeRepeticao01 {
+    static void main(String[] args) {
+        // while, do while, for
+        int count = 0;
+        while (count <= 10) {
+            System.out.println(count);
+            count++;
+        }
+
+        count = 0;
+        do {
+            System.out.println("dento do do-while");
+            count++;
+        } while (count < 10);
+
+        count = 0;
+        for (int i = 0; i <= 10; i++) {
+            System.out.println("Teste" + i);
+        }
+    }
+}
