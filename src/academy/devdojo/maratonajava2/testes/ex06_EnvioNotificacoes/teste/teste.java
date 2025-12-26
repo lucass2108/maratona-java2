@@ -25,7 +25,7 @@ public class teste {
                 SmsNotificacao smsNotificacao = new SmsNotificacao(mensagem);
             }
 
-            if (tipoNotificacao == TipoNotificacao.PUSH){
+            if (tipoNotificacao == TipoNotificacao.PUSH) {
                 PushNotificacao pushNotificacao = new PushNotificacao(mensagem);
             }
 

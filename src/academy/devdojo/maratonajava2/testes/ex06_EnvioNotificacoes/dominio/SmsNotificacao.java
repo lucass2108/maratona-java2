@@ -11,7 +11,7 @@ public class SmsNotificacao implements Notificacao {
 
         try {
             enviar(mensagem);
-        } catch (NotificacaoException e){
+        } catch (NotificacaoException e) {
             e.printStackTrace();
         }
     }

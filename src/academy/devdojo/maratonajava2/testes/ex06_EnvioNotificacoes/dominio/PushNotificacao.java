@@ -11,7 +11,7 @@ public class PushNotificacao implements Notificacao {
 
         try {
             enviar(mensagem);
-        } catch (NotificacaoException e){
+        } catch (NotificacaoException e) {
             e.printStackTrace();
         }
     }
