@@ -11,10 +11,15 @@ public class teste {
         boolean continuar = true;
 
         while (continuar) {
-            System.out.println("Faça sua escolha");
-            String entrada = input.nextLine();
-            PPT escolha = PPT.valueOf(entrada.toUpperCase());
-            Sorteador sorteador = new Sorteador("Lucas", escolha);
+            try {
+                System.out.println("Faça sua escolha");
+                String entrada = input.next();
+                PPT escolha = PPT.valueOf(entrada.toUpperCase());
+                Sorteador sorteador = new Sorteador("Lucas", escolha);
+            } catch (IllegalArgumentException e){
+                System.out.println("Argumento inválido");
+                System.out.println("Pulando jogada");
+            }
         }
     }
 }
