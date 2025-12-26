@@ -10,16 +10,30 @@ public class teste {
         Scanner input = new Scanner(System.in);
         boolean continuar = true;
 
+        System.out.println("###PEDRA, PAPEL & TESOURA###");
+
         while (continuar) {
+            System.out.println("Faça sua escolha");
+            String entrada = input.next();
+
             try {
-                System.out.println("Faça sua escolha");
-                String entrada = input.next();
                 PPT escolha = PPT.valueOf(entrada.toUpperCase());
-                Sorteador sorteador = new Sorteador("Lucas", escolha);
-            } catch (IllegalArgumentException e){
+                Sorteador sorteador = new Sorteador(escolha);
+            } catch (IllegalArgumentException e) {
+                System.out.println(" ");
                 System.out.println("Argumento inválido");
-                System.out.println("Pulando jogada");
+                System.out.println("Inciando outra jogada");
+
+                continue;
             }
+
+            System.out.println("Jogar novamente? (s/n)");
+            String resposta = input.next();
+            char p = Character.toUpperCase(resposta.charAt(0));
+
+            if (p != 'S')
+                continuar = false;
         }
+        System.out.println("Programa encerrado");
     }
 }

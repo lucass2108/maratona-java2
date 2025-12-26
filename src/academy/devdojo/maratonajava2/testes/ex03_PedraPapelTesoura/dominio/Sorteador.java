@@ -3,11 +3,9 @@ package academy.devdojo.maratonajava2.testes.ex03_PedraPapelTesoura.dominio;
 import java.util.Random;
 
 public class Sorteador {
-    private String nome;
     private PPT ppt;
 
-    public Sorteador(String nome, PPT ppt) {
-        this.nome = nome;
+    public Sorteador( PPT ppt) {
         this.ppt = ppt;
 
         sorteio();
@@ -51,6 +49,6 @@ public class Sorteador {
         } else {
             System.out.println("Errro");
         }
-        System.out.println("FIM-------");
+//        System.out.println("FIM-------");
     }
 }
