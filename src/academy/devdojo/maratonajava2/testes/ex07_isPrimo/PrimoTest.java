@@ -17,8 +17,8 @@ public class PrimoTest {
             }
 
             for (int i = 2; i <= num / 2; i++) {
-                if (num % i == 0){
-                    isPrimo= false;
+                if (num % i == 0) {
+                    isPrimo = false;
                     break;
                 }
             }
@@ -26,7 +26,7 @@ public class PrimoTest {
             System.out.println("Inválido");
         }
 
-        if (isPrimo){
+        if (isPrimo) {
             System.out.println("O número " + num + " é primo");
         } else {
             System.out.println("O número " + num + " não é primo");
