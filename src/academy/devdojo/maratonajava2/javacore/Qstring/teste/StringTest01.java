@@ -11,6 +11,6 @@ public class StringTest01 {
         System.out.println(nome2 == nome3);
         System.out.println(nome2 == nome3.intern());
 
-        //Strings sãi imutaveis
+        //Strings são imutaveis
     }
 }
