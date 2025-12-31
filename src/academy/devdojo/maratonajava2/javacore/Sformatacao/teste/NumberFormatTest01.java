@@ -1,19 +1,20 @@
-package academy.devdojo.maratonajava2.javacore.Sformatacao.test01;
+package academy.devdojo.maratonajava2.javacore.Sformatacao.teste;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class NumberFormatTest02 {
+public class NumberFormatTest01 {
     static void main(String[] args) {
         Locale localeDefault = Locale.getDefault();
         Locale localePT = new Locale("pt", "BR");
         Locale localeJP = Locale.JAPAN;
         Locale localeIt = Locale.ITALY;
-        NumberFormat[] nfa = new NumberFormat[]{NumberFormat.getCurrencyInstance(), NumberFormat.getCurrencyInstance(localeJP),
-                NumberFormat.getCurrencyInstance(localePT), NumberFormat.getCurrencyInstance(localeIt)};
-        double valor = 10_000.2190;
+        NumberFormat[] nfa = new NumberFormat[]{NumberFormat.getInstance(), NumberFormat.getInstance(localeJP),
+                NumberFormat.getInstance(localePT), NumberFormat.getInstance(localeIt)};
+        double valor = 10_000.2130;
         for (NumberFormat numberFormat : nfa) {
             System.out.println(numberFormat.format(valor));
         }
+
     }
 }
