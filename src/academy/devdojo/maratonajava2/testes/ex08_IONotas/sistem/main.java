@@ -58,7 +58,7 @@ public class main {
                 }
             }
         } catch (RuntimeException e) {
-            e.printStackTrace();
+            System.out.println("Erro ao obter nota do(a) aluno(a)\nOBS: use \",\" para fazer a divisão entre as casas decimais e inteiras");
         }
 
         String res;
@@ -72,7 +72,7 @@ public class main {
         try (FileWriter fileWriter = new FileWriter(file, true)) {
             fileWriter.write("Nome: " + nome + "\nDisciplina: " + disciplina + "\nNota: " + res + "\n\n");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("O arquivo nao pode ser criado\\escrito");
         }
     }
 
@@ -84,7 +84,7 @@ public class main {
                 System.out.print((char) i);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("O arquivo referenciado nao foi encontrado\nTente novamente ou tente escrever algo para depois ler o arquivo");
         }
     }
 }
