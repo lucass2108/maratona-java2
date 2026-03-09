@@ -87,4 +87,5 @@ public class main {
             System.out.println("O arquivo referenciado nao foi encontrado\nTente novamente ou tente escrever algo para depois ler o arquivo");
         }
     }
+    //OK
 }
